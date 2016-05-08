@@ -8,11 +8,12 @@
 # Site settings
 title: Collider
 email: maker@collider.org
-description: > # ignore newlines
+description: > # ignore newlines 
   A place for people to explore ideas through experimentation.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://collider.org" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
+social-media-img: "/img/social-media-img.png"
 github_username:  Collider-UMD
 # Build settings
 markdown: kramdown

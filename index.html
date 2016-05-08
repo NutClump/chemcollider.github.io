@@ -6,7 +6,7 @@ layout: default
         <div class="title">
             {{ site.title }}
         </div>
-        <div class="description>
+        <div class="description">
             {{ site.description }}
         </div>
     </div>
@@ -14,7 +14,7 @@ layout: default
     <div class="heading-container">
         {% for heading in site.headings %}
             <div class="heading">
-                <a href="{{ heading.link }}">{{ heading.title }}</a>
+                <a href="{{ heading.link }}">{{ heading.name }}</a>
             </div>
         {% endfor %}
     </div>
