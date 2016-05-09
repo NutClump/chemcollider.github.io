@@ -19,7 +19,7 @@ github_username:  Collider-UMD
 markdown: kramdown
 headings:
     - name: Contact
-      content: "To get in touch, shoot an email to <a href='mailto: maker@collider.org'>maker@collider.org</a>"
+      content: "To get in touch, shoot an email to <a href='mailto:maker@collider.org'>maker@collider.org</a>"
     - name: Rules
       include: "rules.html"
     - name: Getting there
