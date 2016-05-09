@@ -26,7 +26,8 @@ headings:
       content: "For directions, check out <a href=''>this video</a>"
 rules:
     - rule: "Collider is always open, to everyone"
-    - rule: "Nothing leaves the space without permission"
     - rule: "Clean up after yourself"
-    - rule: "Request resources for projects <a href=''>here</a>"
     - rule: "Build something cool"
+    - rule: "<div style='height:1px'></div>"
+    - rule: "Request resources for projects <a href=''>here</a>"
+    - rule: "Please get permission before taking things out of the space"
