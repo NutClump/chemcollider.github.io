@@ -22,13 +22,19 @@ layout: default
         "
        onclick="$('#{{ heading.name | replace:' ','-' }}').slideToggle();">
         <div class="heading-text">
+          <script>
+            $document.ready(function() {
+              $('#{{ heading.name | replace:' ','-' }}').addEvent('click', function(ev){ev.stopPropagation();});});
+          </script>
           <div class="title-heading">
             {{ heading.name }}
             <div class="heading-content" id="{{ heading.name| replace:' ','-'  }}">
               {% if heading.include %}
                 {% include {{ heading.include }} %}
               {% else %}
-                {{ heading.content }}
+                <div class="description">
+                  {{ heading.content }}
+                </div>
               {% endif %}
             </div>
           </div>
