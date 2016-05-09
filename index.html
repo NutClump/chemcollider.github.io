@@ -2,20 +2,38 @@
 layout: default
 ---
 <div class="home-body">
-    <div class="title-container">
-        <div class="title">
-            {{ site.title }}
-        </div>
-        <div class="description">
-            {{ site.description }}
-        </div>
+  <div class="title-container">
+    <div class="title-text">
+      <div class="title title-heading">
+        {{ site.title }}
+      </div>
+      <div class="description">
+        {{ site.description }}
+      </div>
     </div>
-    
-    <div class="heading-container">
-        {% for heading in site.headings %}
-            <div class="heading">
-                <a href="{{ heading.link }}">{{ heading.name }}</a>
+  </div>
+  <div class="heading-container">
+    {% for heading in site.headings %}
+      {% capture modulo2 %}{{ forloop.index0 | mod:2 }}{% endcapture %}
+      <div class="heading
+        {% if modulo2 == '1' %}
+          bordered-heading
+        {% endif %}
+        "
+       onclick="$('#{{ heading.name | replace:' ','-' }}').slideToggle();">
+        <div class="heading-text">
+          <div class="title-heading">
+            {{ heading.name }}
+            <div class="heading-content" id="{{ heading.name| replace:' ','-'  }}">
+              {% if heading.include %}
+                {% include {{ heading.include }} %}
+              {% else %}
+                {{ heading.content }}
+              {% endif %}
             </div>
-        {% endfor %}
-    </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

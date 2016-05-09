@@ -10,7 +10,7 @@ title: Collider
 email: maker@collider.org
 description: > # ignore newlines 
   A place for people to explore ideas through experimentation.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://collider.org" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 social-media-img: "/img/social-media-img.png"
@@ -19,8 +19,14 @@ github_username:  Collider-UMD
 markdown: kramdown
 headings:
     - name: Contact
-      link: http://gmail.com
+      content: "To get in touch, shoot an email to <a href='mailto: maker@collider.org'>maker@collider.org</a>"
     - name: Rules
-      link: /rules
+      include: "rules.html"
     - name: Getting there
-      link: http://youtube.com
+      content: "For directions, check out <a href=''>this video</a>"
+rules:
+    - rule: "Collider is always open, to everyone"
+    - rule: "Nothing leaves the space without permission"
+    - rule: "Clean up after yourself"
+    - rule: "Request resources for projects <a href=''>here</a>"
+    - rule: "Build something cool"

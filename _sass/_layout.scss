@@ -1,2 +1,116 @@
+@import url('/fonts/SourceSansPro.css');
+@import url('/fonts/Roboto.css');
+@import url('/fonts/Josefin.css');
 
+body {
+  text-align: center;
+  color: #444444;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
 
+.heading,a {
+  color: #AAAAAA;
+}
+
+.heading:active,.heading:hover,a:active,a:hover {
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+ul {
+  text-align: left;
+}
+
+ul>li {
+  margin-bottom: 10px;
+}
+
+.heading-content {
+  color: #444444;
+  display: none;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.title-container {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
+
+.title-heading {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.title-img {
+  height: 120px;
+}
+
+.title-text {
+  position: relative;
+  height: 20%;
+  top: 40%;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 100;
+  font-family: 'Josefin Sans' sans-serif;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.heading-container {
+  top: 500px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.heading-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  width: 33%;
+  height: 100%;
+  float: left;
+  font-weight: 300;
+}
+
+.bordered-heading {
+  border-right: 1px dashed;
+  border-left: 1px dashed;
+}
+
+@media only screen and (max-width: 720px) {
+  .title-container {
+    height: 275px;
+  }
+
+  .heading-container {
+    top: 275px;
+  }
+
+  .heading {
+    width: 100%;
+    height: 150px;
+  }
+
+  .bordered-heading {
+    border-right: none;
+    border-left: none;
+  }
+}
